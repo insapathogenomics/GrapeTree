@@ -1,5 +1,11 @@
 # GrapeTree
 
+**This is a forked repository of [GrapeTree](https://github.com/achtman-lab/GrapeTree) where the tool was modified in order to output a list of redundant samples and also the pairwise distances of the Minimum Spanning Tree.**
+
+
+
+
+
 [![Build Status](https://travis-ci.org/achtman-lab/GrapeTree.svg?branch=master)](https://travis-ci.org/achtman-lab/GrapeTree)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Docs Status](https://readthedocs.org/projects/enterobase/badge/)](http://enterobase.readthedocs.io/en/latest/grapetree/grapetree-about.html)
