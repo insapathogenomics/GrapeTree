@@ -500,9 +500,6 @@ class methods(object) :
                 print("Distance MSTree2 output: done") #EDITED
 
         tree = methods._network2tree(tree, names)
-        
-        with open(output + ".nw", "w+") as out2: #EDITED
-            print(tree, file = out2) #EDITED
 
         return tree
 
@@ -813,6 +810,10 @@ def backend(**args) :
                     os.unlink(fname)
                 except :
                     pass
+            
+            with open(params['out'] + ".nw", "w+") as out2: #EDITED
+                print(tre.write(format=1).replace("'", ""), file = out2)
+            
             return tre.write(format=1).replace("'", "")
         else :
             for fname in (params['prof_file'], params['dist_file']) :
@@ -820,8 +821,12 @@ def backend(**args) :
                     os.unlink(fname)
                 except :
                     pass
+            with open(params['out'] + ".nw", "w+") as out2: #EDITED
+                print('\n'.join(tre), file = out2)
+            
             return '\n'.join(tre)
-
+	
+            
 def estimate_Consumption(platform, method, matrix, n_proc, n_loci, n_profile) :
     if method in ('MSTree', 'RapidNJ') :
         if matrix == 'asymmetric' :
