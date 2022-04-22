@@ -811,7 +811,7 @@ def backend(**args) :
                 except :
                     pass
             
-            with open(params['out'] + ".nw", "w+") as out2: #EDITED
+            with open(params['out'] + ".nwk", "w+") as out2: #EDITED
                 print(tre.write(format=1).replace("'", ""), file = out2)
             
             return tre.write(format=1).replace("'", "")
@@ -821,7 +821,7 @@ def backend(**args) :
                     os.unlink(fname)
                 except :
                     pass
-            with open(params['out'] + ".nw", "w+") as out2: #EDITED
+            with open(params['out'] + ".nwk", "w+") as out2: #EDITED
                 print('\n'.join(tre), file = out2)
             
             return '\n'.join(tre)
