@@ -186,7 +186,6 @@ class distance_matrix(object) :
                 profile, presence = profiles[id], presences[id]
                 diffs = np.sum((profiles != profile) & presence, axis=1)
                 distances[:, i2] = diffs
-        
         return distances
 
     @staticmethod
@@ -856,4 +855,3 @@ def estimate_Consumption(platform, method, matrix, n_proc, n_loci, n_profile) :
 if __name__ == '__main__' :
     tre = backend(**add_args())
     print(tre)
-
