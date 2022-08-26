@@ -462,7 +462,7 @@ class methods(object) :
         
         dmatrix = pandas.DataFrame(data = dist, index = names, columns = names) #EDITED
         if output != "": #EDITED
-            dmatrix.to_csv(output + ".mx", index = True, header= True, sep ="\t") #EDITED
+            dmatrix.to_csv(output + "_mx.tsv", index = True, header= True, sep ="\t") #EDITED
             print("Distance matrix output: done") 
         else: #EDITED
             print("\nDistance matrix:\n") #EDITED
@@ -493,7 +493,7 @@ class methods(object) :
             for group in tree: #EDITED
                 print(sample_conversion[int(group[0])], sample_conversion[int(group[1])], group[2]) #EDITED
         else: #EDITED
-            with open(output + ".dist", "w+") as out: #EDITED
+            with open(output + "_dist.tsv", "w+") as out: #EDITED
                 for group in tree: #EDITED
                     print(str(sample_conversion[int(group[0])]) + "\t" + str(sample_conversion[int(group[1])]) + "\t" + str(group[2]), file = out) #EDITED
                 print("Distance MSTree2 output: done") #EDITED
@@ -855,3 +855,4 @@ def estimate_Consumption(platform, method, matrix, n_proc, n_loci, n_profile) :
 if __name__ == '__main__' :
     tre = backend(**add_args())
     print(tre)
+
