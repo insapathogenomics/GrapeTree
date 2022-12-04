@@ -462,7 +462,7 @@ class methods(object) :
         
         dmatrix = pandas.DataFrame(data = dist, index = names, columns = names) #EDITED
         if output != "": #EDITED
-            dmatrix.to_csv(output + "_mx.tsv", index = True, header= True, sep ="\t") #EDITED
+            dmatrix.to_csv(output + "_dist_grapetree.tsv", index = True, header= True, sep ="\t") #EDITED
             print("Distance matrix output: done") 
         else: #EDITED
             print("\nDistance matrix:\n") #EDITED
