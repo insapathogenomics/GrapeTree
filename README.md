@@ -1,6 +1,6 @@
 # GrapeTree
 
-**This is a forked repository of [GrapeTree](https://github.com/achtman-lab/GrapeTree) where the tool was modified in order to output a list of redundant samples and also the pairwise distances of the Minimum Spanning Tree.**
+**This is a forked repository of [GrapeTree](https://github.com/achtman-lab/GrapeTree) where the tool was modified in order to output a list of redundant samples and also the pairwise distances of the Minimum Spanning Tree. These new outputs are then used by [ReporTree](https://github.com/insapathogenomics/ReporTree) to determine the genetic clusters at any (or all) possible distance thresholds of the tree.**
 
 
 
